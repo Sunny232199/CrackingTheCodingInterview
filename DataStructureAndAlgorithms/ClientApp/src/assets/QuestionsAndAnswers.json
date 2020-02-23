@@ -1,0 +1,100 @@
+[
+   {
+      "id": 1,
+      "title": "Arrays And String",
+      "description": "Questions related to Arrays and Strings",
+      "questionsAndSolutions": [
+         {
+            "questionId": "1",
+            "question": "Is Unique",
+            "hints": [
+               "Try brute force",
+               "Try Hashtable"
+            ],
+            "approaches": [
+               {
+                  "approachId": 1,
+                  "description": "Trying brute force",
+                  "implementation": "public void IsUnique()"
+               },
+               {
+                  "approachId": 2,
+                  "description": "Trying Hashtable",
+                  "implementation": "public void IsUnique()"
+               }
+            ],
+            "performanceComparison": ""
+         },
+         {
+            "questionId": 2,
+            "question": "Palindrome Permutation",
+            "hints": [
+               "Try brute force",
+               "Try Hashtable"
+            ],
+            "approaches": [
+               {
+                  "approachId": 1,
+                  "description": "Trying brute force",
+                  "implementation": "public void PalindromePermutation()"
+               },
+               {
+                  "approachId": 2,
+                  "description": "Trying Hashtable",
+                  "implementation": "public void PalindromePermutation()"
+               }
+            ],
+            "performanceComparison": ""
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "title": "Lists",
+      "description": "Questions related to Lists",
+      "questionsAndSolutions": [
+         {
+            "questionId": "1",
+            "question": "Is Lists Unique",
+            "hints": [
+               "Try brute force",
+               "Try Hashtable"
+            ],
+            "approaches": [
+               {
+                  "approachId": 1,
+                  "description": "Trying brute force",
+                  "implementation": "public void IsUnique()"
+               },
+               {
+                  "approachId": 2,
+                  "description": "Trying Hashtable",
+                  "implementation": "public void IsUnique()"
+               }
+            ],
+            "performanceComparison": ""
+         },
+         {
+            "questionId": 2,
+            "question": "Lists Palindrome Permutation",
+            "hints": [
+               "Try brute force",
+               "Try Hashtable"
+            ],
+            "approaches": [
+               {
+                  "approachId": 1,
+                  "description": "Trying brute force",
+                  "implementation": "public void PalindromePermutation()"
+               },
+               {
+                  "approachId": 2,
+                  "description": "Trying Hashtable",
+                  "implementation": "public void PalindromePermutation()"
+               }
+            ],
+            "performanceComparison": ""
+         }
+      ]
+   }
+]

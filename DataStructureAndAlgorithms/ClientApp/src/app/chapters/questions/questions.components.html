@@ -1,0 +1,16 @@
+<div *ngIf="questionsAndSolutions && questionsAndSolutions.length>0; else notdata">
+    <div *ngFor="let questionsAndSolution of questionsAndSolutions">
+        <p> <br /> <b>Q{{questionsAndSolution.questionId}}.</b> &nbsp;&nbsp; {{questionsAndSolution.question}} </p>
+        <div *ngFor="let approach of questionsAndSolution.approaches">
+            <pre>{{approach.description}}
+<code [highlight]="approach.implementation" [lineNumbers]="true">
+</code>
+
+</pre>
+        </div>
+    </div>
+</div>
+
+<ng-template #notdata>
+    Please select a chapter.
+</ng-template>

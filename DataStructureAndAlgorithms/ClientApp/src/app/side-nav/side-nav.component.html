@@ -1,13 +1,11 @@
 <nav id="sidebar" class="navbar-dark bg-dark" [ngClass]="{'hidden': sideNavService.hideSideNav }">
-    <ul class="navbar-nav flex-grow d-sm-inline-flex">
-        <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
-          <a class="nav-link text-light" [routerLink]="['/']">Home</a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['link-active']">
-          <a class="nav-link text-light" [routerLink]="['/arraysandstrings']">Arrays & Strings</a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['link-active']">
-          <a class="nav-link text-light" [routerLink]="['/fetch-data']">Fetch data</a>
-        </li>
-      </ul>
+  <ul class="navbar-nav flex-grow d-sm-inline-flex">
+    <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+      <a class="nav-link text-light" [routerLink]="['/']">Home</a>
+    </li>
+    <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" *ngFor="let chapter of chapters">
+      <a class="nav-link text-light" [routerLink]="['/questions']"
+        [state]="{data:chapter.questionsAndSolutions}">{{chapter.title}}</a>
+    </li>
+  </ul>
 </nav>
